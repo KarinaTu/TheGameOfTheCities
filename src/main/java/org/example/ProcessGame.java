@@ -13,7 +13,7 @@ public class ProcessGame {
 
             boolean isCityNameCorrect = false;
             while (!isCityNameCorrect) {
-                City inputtedCity = new City(CityNameController.cityNameController(scanner, player, properties));
+                City inputtedCity = new City(City.cityNameController(scanner, player, properties));
                 String[] citiesArray = cities.toArray(new String[cities.size()]);
                 try {
                     City lastCity = new City(citiesArray[citiesArray.length - 1]);
